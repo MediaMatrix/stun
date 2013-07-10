@@ -3,15 +3,15 @@
  * MIT Licensed
  */
 
-require.paths.unshift('../lib');
-var stun = require('stun');
+var stun = require('../lib/stun.js');
 
 // Load config file.
 var fs = require('fs');
 eval(fs.readFileSync('stunServer.conf', encoding="ascii"));
 
 var server = stun.createServer();
-server.setAddress0(settings.STUN_SERVER_ADDR_0);
-server.setAddress1(settings.STUN_SERVER_ADDR_1);
+server.setAddress0('127.0.0.2');
+server.setAddress1('127.0.0.3');
+server.setPort0(settings.STUN_SERVER_PORT_0);
+server.setPort1(settings.STUN_SERVER_PORT_1);
 server.listen();
-
