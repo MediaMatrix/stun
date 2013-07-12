@@ -13,8 +13,9 @@ STUN (Simple Traversal of UDP through NAT: RFC3489) is a protocol that allows a 
 
 ## How to run STUN server
 
-(1) execute stunsrv from the command line
+(1) execute stunsrv from the command line or
 (2) create and handle a stun server through the class from a js file
+
     # From terminal
     $ stunsrv
     $ stunsrv firstIP secondIP firstPort secondPort
