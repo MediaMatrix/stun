@@ -2,9 +2,9 @@
   "name": "stunsrv",
   "version": "0.0.0",
   "description": "A STUN server package.",
-  "main": "./bin/stunsrv.js",
+  "main": "./lib/main.js",
   "bin": {
-    "stunsrv": "stunsrv.js"
+    "stunsrv": "./bin/stunsrv.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
