@@ -2,7 +2,7 @@
   "name": "stunsrv",
   "version": "0.0.0",
   "description": "A STUN server package.",
-  "main": "./lib/main.js",
+  "main": "./lib/stun.js",
   "bin": {
     "stunsrv": "./bin/stunsrv.js"
   },
