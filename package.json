@@ -1,0 +1,25 @@
+{
+  "name": "stunsrv",
+  "version": "0.0.0",
+  "description": "A STUN server package.",
+  "main": "./bin/stunsrv",
+  "bin": {
+    "stunsrv": "stunsrv.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/keyneom/stun.git"
+  },
+  "keywords": [
+    "STUN",
+    "server"
+  ],
+  "author": "Mika Sanchez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keyneom/stun/issues"
+  }
+}
