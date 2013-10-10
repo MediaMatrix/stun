@@ -1,4 +1,4 @@
-# STUN server (and client) NPM package for Node.js
+# A STUN client and server NPM package
 
 ## Overview
 STUN (Simple Traversal of UDP through NAT: RFC3489) is a protocol that allows a client node to obtain an external IP address and port number assigned by a NAT the client is behind. It can also identify behavioral type of the NAT. It is implemented in JavaScript to run with node.js.
