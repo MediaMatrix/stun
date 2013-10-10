@@ -1,7 +1,7 @@
 {
   "name": "stunsrv",
-  "version": "0.0.1",
-  "description": "A STUN server package.",
+  "version": "0.0.2",
+  "description": "A STUN client/server package.",
   "main": "./lib/stun.js",
   "bin": {
     "stunsrv": "./bin/stunsrv.js"
@@ -15,7 +15,9 @@
   },
   "keywords": [
     "STUN",
-    "server"
+    "server",
+    "client",
+    "NAT"
   ],
   "author": "Mika Sanchez",
   "license": "MIT",
