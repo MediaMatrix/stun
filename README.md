@@ -30,6 +30,27 @@ STUN (Simple Traversal of UDP through NAT: RFC3489) is a protocol that allows a 
     server.setPort1(port1);
     server.listen();
 
+## How to run STUN client
+
+    var stun = require('stunsrv');
+
+    //var STUN_SERVER_ADDR = "dntg-stun.usrd.scea.com";
+    //var STUN_SERVER_ADDR = "stun1.noc.ams-ix.net";
+    var STUN_SERVER_ADDR = "172.16.4.6";
+
+    var client = stun.createClient();
+    client.setServerAddr(STUN_SERVER_ADDR);
+    client.start(function(result)
+    {
+        var mapped = client.getMappedAddr();
+        // Dump client properties
+        console.log("Complete(" + result + "): " + (client.isNatted()?"Natted":"Open") + " NB=" + client.getNB() + " EF=" + client.getEF() + " (" + client.getNatType() + ") mapped=" + mapped.address + ":" + mapped.port + " rtt=" + client.getRtt());
+        client.close(function()
+        {
+            console.log("All sockets closed.");
+        });
+    });
+
 That is it!
 
 # Limitations
