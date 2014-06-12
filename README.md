@@ -16,8 +16,7 @@ You may need to create a symlink to node
 
 ```
 #!bash
-
-    $ sudo ln -s /usr/bin/nodejs /usr/bin/node
+$ sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
 
@@ -28,9 +27,14 @@ You may need to create a symlink to node
 
  -- defaults are provided for all parameters (you'll probably need to use the first two though to do anything useful)
 
-    # From terminal
-    $ stunsrv
-    $ stunsrv firstIP secondIP firstPort secondPort externalIP0 externalIP1
+
+```
+#!bash
+# From terminal
+$ stunsrv
+$ stunsrv firstIP secondIP firstPort secondPort externalIP0 externalIP1
+```
+
 
     # Or programmatically
     var stun = require('stunsrv');
