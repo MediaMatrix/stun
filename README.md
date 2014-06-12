@@ -12,22 +12,28 @@ STUN (Simple Traversal of UDP through NAT: RFC3489) is a protocol that allows a 
 # How to install STUN server
     $ npm install -g stunsrv
 
+You may need to create a symlink to node
+    $ sudo ln -s /usr/bin/nodejs /usr/bin/node
+
 ## How to run STUN server
 
 (1) execute stunsrv from the command line or
 (2) create and handle a stun server through the class from a js file
+ -- defaults are provided for all parameters (you'll probably need to use the first two though to do anything useful)
 
     # From terminal
     $ stunsrv
-    $ stunsrv firstIP secondIP firstPort secondPort
+    $ stunsrv firstIP secondIP firstPort secondPort externalIP0 externalIP1
 
     # Or programmatically
     var stun = require('stunsrv');
     var server = stun.createServer();
-    server.setAddress0("externalIP0");
-    server.setAddress1("externalIP1");
+    server.setAddress0("bindAddress0");
+    server.setAddress1("bindAddress1");
     server.setPort0(port0);
     server.setPort1(port1);
+    server.setResponseAddress0("externalIP0");
+    server.setResponseAddress1("externalIP1");
     server.listen();
 
 ## How to run STUN client
