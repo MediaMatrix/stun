@@ -14,7 +14,12 @@ STUN (Simple Traversal of UDP through NAT: RFC3489) is a protocol that allows a 
 
 You may need to create a symlink to node
 
+```
+#!bash
+
     $ sudo ln -s /usr/bin/nodejs /usr/bin/node
+```
+
 
 ## How to run STUN server
 
@@ -79,4 +84,3 @@ MIT Licensed
 
 # CONTRIBUTORS WANTED!!
 Please contact me.
-
