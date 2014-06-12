@@ -13,12 +13,14 @@ STUN (Simple Traversal of UDP through NAT: RFC3489) is a protocol that allows a 
     $ npm install -g stunsrv
 
 You may need to create a symlink to node
+
     $ sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 ## How to run STUN server
 
 (1) execute stunsrv from the command line or
 (2) create and handle a stun server through the class from a js file
+
  -- defaults are provided for all parameters (you'll probably need to use the first two though to do anything useful)
 
     # From terminal
